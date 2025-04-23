@@ -1,0 +1,102 @@
+[
+  {
+    "id": "order_1745416540058",
+    "fullName": "sato",
+    "address": "viengkeo viantain 2012",
+    "shippingProvider": "USPS",
+    "contact": "2078411642",
+    "cartTotal": 328,
+    "cartItems": [
+      {
+        "id": 1,
+        "name": "Asteroid B-612",
+        "price": 98,
+        "quantity": 1,
+        "imageUrl": "/images/perfume-1.jpeg",
+        "family": "Woody Floral"
+      },
+      {
+        "id": 2,
+        "name": "Starry Night",
+        "price": 120,
+        "quantity": 1,
+        "imageUrl": "/images/perfume-2.jpeg",
+        "family": "Fougère Amber"
+      },
+      {
+        "id": 3,
+        "name": "Desert Mirage",
+        "price": 110,
+        "quantity": 1,
+        "imageUrl": "/images/perfume-3.jpeg",
+        "family": "Spicy Oriental"
+      }
+    ],
+    "paymentProof": "/uploads/proof_1745416540056_tung.jpg",
+    "createdAt": "2025-04-23T13:55:40.058Z",
+    "status": "verified"
+  },
+  {
+    "id": "order_1745416562095",
+    "fullName": "satoru",
+    "address": "viengkeo viantain 2012",
+    "shippingProvider": "UPS",
+    "contact": "2078411642",
+    "cartTotal": 110,
+    "cartItems": [
+      {
+        "id": 3,
+        "name": "Desert Mirage",
+        "price": 110,
+        "quantity": 1,
+        "imageUrl": "/images/perfume-3.jpeg",
+        "family": "Spicy Oriental"
+      }
+    ],
+    "paymentProof": "/uploads/proof_1745416562094_TungTungTungSahur.jpeg",
+    "createdAt": "2025-04-23T13:56:02.095Z",
+    "status": "rejected"
+  },
+  {
+    "id": "order_1745416594491",
+    "fullName": "satoru",
+    "address": "viengkeo viantain 2012",
+    "shippingProvider": "UPS",
+    "contact": "2078411642",
+    "cartTotal": 98,
+    "cartItems": [
+      {
+        "id": 1,
+        "name": "Asteroid B-612",
+        "price": 98,
+        "quantity": 1,
+        "imageUrl": "/images/perfume-1.jpeg",
+        "family": "Woody Floral"
+      }
+    ],
+    "paymentProof": "/uploads/proof_1745416594491_tung.jpg",
+    "createdAt": "2025-04-23T13:56:34.491Z",
+    "status": "pending"
+  },
+  {
+    "id": "order_1745416646405",
+    "fullName": "sato",
+    "address": "viengkeo viantain 2012",
+    "shippingProvider": "UPS",
+    "contact": "2078411642",
+    "cartTotal": 98,
+    "cartItems": [
+      {
+        "id": 1,
+        "name": "Asteroid B-612",
+        "price": 98,
+        "quantity": 1,
+        "imageUrl": "/images/perfume-1.jpeg",
+        "family": "Woody Floral"
+      }
+    ],
+    "paymentProof": "/uploads/proof_1745416646404_tung.jpg",
+    "createdAt": "2025-04-23T13:57:26.406Z",
+    "status": "shipped"
+  }
+]
