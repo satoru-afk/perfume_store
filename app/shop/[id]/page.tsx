@@ -14,8 +14,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ProductDetail({ params }: { params: { id: string } }) {
-  const product = perfumes.find((p) => p.id === parseInt(params.id));
+export default async function ProductDetail({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const product = perfumes.find((p) => p.id === parseInt(id));
 
   if (!product) {
     return notFound();

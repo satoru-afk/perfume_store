@@ -1,30 +1,32 @@
-import NextAuth from 'next-auth'
-import CredentialsProvider from 'next-auth/providers/credentials'
+import NextAuth from "next-auth";
+import CredentialsProvider from "next-auth/providers/credentials";
 
-export const authOptions = {
+const handler = NextAuth({
   providers: [
     CredentialsProvider({
-      name: 'Credentials',
+      name: "Credentials",
       credentials: {
         username: { label: "Username", type: "text" },
-        password: { label: "Password", type: "password" }
+        password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        // Add your own authentication logic here
-        const user = { id: "1", name: "Admin", username: "admin" }
-        
-        if (credentials?.username === process.env.ADMIN_USERNAME && 
-            credentials?.password === process.env.ADMIN_PASSWORD) {
-          return user
+        // Check if credentials match (replace with your actual logic)
+        if (
+          credentials?.username === process.env.ADMIN_USERNAME &&
+          credentials?.password === process.env.ADMIN_PASSWORD
+        ) {
+          // Return a user object if valid
+          return { id: "1", name: "Admin", username: "admin" };
         }
-        return null
-      }
-    })
+        // Return null if invalid
+        return null;
+      },
+    }),
   ],
   pages: {
-    signIn: '/admin/login',
-  }
-}
+    signIn: "/admin/login", // Custom login page
+  },
+});
 
-const handler = NextAuth(authOptions)
-export { handler as GET, handler as POST }
+// Export the handler for GET and POST requests
+export { handler as GET, handler as POST };
